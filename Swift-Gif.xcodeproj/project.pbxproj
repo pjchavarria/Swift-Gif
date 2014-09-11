@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA7FDEA819C21C8900D80F4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7FDEA719C21C8900D80F4C /* AppDelegate.swift */; };
+		DA7FDEAB19C21C8900D80F4C /* Swift_Gif.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA7FDEA919C21C8900D80F4C /* Swift_Gif.xcdatamodeld */; };
+		DA7FDEAD19C21C8900D80F4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7FDEAC19C21C8900D80F4C /* ViewController.swift */; };
+		DA7FDEB019C21C8900D80F4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA7FDEAE19C21C8900D80F4C /* Main.storyboard */; };
+		DA7FDEB219C21C8900D80F4C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA7FDEB119C21C8900D80F4C /* Images.xcassets */; };
+		DA7FDEB519C21C8900D80F4C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA7FDEB319C21C8900D80F4C /* LaunchScreen.xib */; };
+		DA7FDEC119C21C8900D80F4C /* Swift_GifTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7FDEC019C21C8900D80F4C /* Swift_GifTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA7FDEBB19C21C8900D80F4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA7FDE9A19C21C8900D80F4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA7FDEA119C21C8900D80F4C;
+			remoteInfo = "Swift-Gif";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DA7FDEA219C21C8900D80F4C /* Swift-Gif.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-Gif.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA7FDEA619C21C8900D80F4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA7FDEA719C21C8900D80F4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DA7FDEAA19C21C8900D80F4C /* Swift_Gif.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Swift_Gif.xcdatamodel; sourceTree = "<group>"; };
+		DA7FDEAC19C21C8900D80F4C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DA7FDEAF19C21C8900D80F4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DA7FDEB119C21C8900D80F4C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DA7FDEB419C21C8900D80F4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		DA7FDEBA19C21C8900D80F4C /* Swift-GifTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift-GifTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA7FDEBF19C21C8900D80F4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA7FDEC019C21C8900D80F4C /* Swift_GifTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_GifTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA7FDE9F19C21C8900D80F4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA7FDEB719C21C8900D80F4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA7FDE9919C21C8900D80F4C = {
+			isa = PBXGroup;
+			children = (
+				DA7FDEA419C21C8900D80F4C /* Swift-Gif */,
+				DA7FDEBD19C21C8900D80F4C /* Swift-GifTests */,
+				DA7FDEA319C21C8900D80F4C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA7FDEA319C21C8900D80F4C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA7FDEA219C21C8900D80F4C /* Swift-Gif.app */,
+				DA7FDEBA19C21C8900D80F4C /* Swift-GifTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA7FDEA419C21C8900D80F4C /* Swift-Gif */ = {
+			isa = PBXGroup;
+			children = (
+				DA7FDEA719C21C8900D80F4C /* AppDelegate.swift */,
+				DA7FDEAC19C21C8900D80F4C /* ViewController.swift */,
+				DA7FDEAE19C21C8900D80F4C /* Main.storyboard */,
+				DA7FDEB119C21C8900D80F4C /* Images.xcassets */,
+				DA7FDEB319C21C8900D80F4C /* LaunchScreen.xib */,
+				DA7FDEA919C21C8900D80F4C /* Swift_Gif.xcdatamodeld */,
+				DA7FDEA519C21C8900D80F4C /* Supporting Files */,
+			);
+			path = "Swift-Gif";
+			sourceTree = "<group>";
+		};
+		DA7FDEA519C21C8900D80F4C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA7FDEA619C21C8900D80F4C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DA7FDEBD19C21C8900D80F4C /* Swift-GifTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA7FDEC019C21C8900D80F4C /* Swift_GifTests.swift */,
+				DA7FDEBE19C21C8900D80F4C /* Supporting Files */,
+			);
+			path = "Swift-GifTests";
+			sourceTree = "<group>";
+		};
+		DA7FDEBE19C21C8900D80F4C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA7FDEBF19C21C8900D80F4C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA7FDEA119C21C8900D80F4C /* Swift-Gif */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA7FDEC419C21C8900D80F4C /* Build configuration list for PBXNativeTarget "Swift-Gif" */;
+			buildPhases = (
+				DA7FDE9E19C21C8900D80F4C /* Sources */,
+				DA7FDE9F19C21C8900D80F4C /* Frameworks */,
+				DA7FDEA019C21C8900D80F4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Swift-Gif";
+			productName = "Swift-Gif";
+			productReference = DA7FDEA219C21C8900D80F4C /* Swift-Gif.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DA7FDEB919C21C8900D80F4C /* Swift-GifTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA7FDEC719C21C8900D80F4C /* Build configuration list for PBXNativeTarget "Swift-GifTests" */;
+			buildPhases = (
+				DA7FDEB619C21C8900D80F4C /* Sources */,
+				DA7FDEB719C21C8900D80F4C /* Frameworks */,
+				DA7FDEB819C21C8900D80F4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA7FDEBC19C21C8900D80F4C /* PBXTargetDependency */,
+			);
+			name = "Swift-GifTests";
+			productName = "Swift-GifTests";
+			productReference = DA7FDEBA19C21C8900D80F4C /* Swift-GifTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA7FDE9A19C21C8900D80F4C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = AnyTap;
+				TargetAttributes = {
+					DA7FDEA119C21C8900D80F4C = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					DA7FDEB919C21C8900D80F4C = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = DA7FDEA119C21C8900D80F4C;
+					};
+				};
+			};
+			buildConfigurationList = DA7FDE9D19C21C8900D80F4C /* Build configuration list for PBXProject "Swift-Gif" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA7FDE9919C21C8900D80F4C;
+			productRefGroup = DA7FDEA319C21C8900D80F4C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA7FDEA119C21C8900D80F4C /* Swift-Gif */,
+				DA7FDEB919C21C8900D80F4C /* Swift-GifTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA7FDEA019C21C8900D80F4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA7FDEB019C21C8900D80F4C /* Main.storyboard in Resources */,
+				DA7FDEB519C21C8900D80F4C /* LaunchScreen.xib in Resources */,
+				DA7FDEB219C21C8900D80F4C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA7FDEB819C21C8900D80F4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA7FDE9E19C21C8900D80F4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA7FDEAD19C21C8900D80F4C /* ViewController.swift in Sources */,
+				DA7FDEAB19C21C8900D80F4C /* Swift_Gif.xcdatamodeld in Sources */,
+				DA7FDEA819C21C8900D80F4C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA7FDEB619C21C8900D80F4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA7FDEC119C21C8900D80F4C /* Swift_GifTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA7FDEBC19C21C8900D80F4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA7FDEA119C21C8900D80F4C /* Swift-Gif */;
+			targetProxy = DA7FDEBB19C21C8900D80F4C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DA7FDEAE19C21C8900D80F4C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA7FDEAF19C21C8900D80F4C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DA7FDEB319C21C8900D80F4C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA7FDEB419C21C8900D80F4C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA7FDEC219C21C8900D80F4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DA7FDEC319C21C8900D80F4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA7FDEC519C21C8900D80F4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Swift-Gif/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DA7FDEC619C21C8900D80F4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Swift-Gif/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DA7FDEC819C21C8900D80F4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Swift-GifTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift-Gif.app/Swift-Gif";
+			};
+			name = Debug;
+		};
+		DA7FDEC919C21C8900D80F4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Swift-GifTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift-Gif.app/Swift-Gif";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA7FDE9D19C21C8900D80F4C /* Build configuration list for PBXProject "Swift-Gif" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA7FDEC219C21C8900D80F4C /* Debug */,
+				DA7FDEC319C21C8900D80F4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA7FDEC419C21C8900D80F4C /* Build configuration list for PBXNativeTarget "Swift-Gif" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA7FDEC519C21C8900D80F4C /* Debug */,
+				DA7FDEC619C21C8900D80F4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DA7FDEC719C21C8900D80F4C /* Build configuration list for PBXNativeTarget "Swift-GifTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA7FDEC819C21C8900D80F4C /* Debug */,
+				DA7FDEC919C21C8900D80F4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DA7FDEA919C21C8900D80F4C /* Swift_Gif.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DA7FDEAA19C21C8900D80F4C /* Swift_Gif.xcdatamodel */,
+			);
+			currentVersion = DA7FDEAA19C21C8900D80F4C /* Swift_Gif.xcdatamodel */;
+			path = Swift_Gif.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DA7FDE9A19C21C8900D80F4C /* Project object */;
+}
