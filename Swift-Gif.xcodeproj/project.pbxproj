@@ -33,6 +33,7 @@
 		DA7FDED419C221D500D80F4C /* Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7FDED319C221D500D80F4C /* Gif.swift */; };
 		DA7FDED919C2276800D80F4C /* GifViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7FDED819C2276800D80F4C /* GifViewCell.swift */; };
 		DA7FDEE019C3873400D80F4C /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7FDEDF19C3873400D80F4C /* SwiftyJSON.swift */; };
+		DA9F1A2319C890BB00988CA4 /* demo.gif in Resources */ = {isa = PBXBuildFile; fileRef = DA9F1A2219C890BB00988CA4 /* demo.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		DA7FDED319C221D500D80F4C /* Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gif.swift; sourceTree = "<group>"; };
 		DA7FDED819C2276800D80F4C /* GifViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifViewCell.swift; sourceTree = "<group>"; };
 		DA7FDEDF19C3873400D80F4C /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		DA9F1A2219C890BB00988CA4 /* demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = demo.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +186,7 @@
 				DA7FDEB119C21C8900D80F4C /* Images.xcassets */,
 				DA17EBAE19C50BBB0027B542 /* picture_filled-256.png */,
 				DA17EBB019C5333B0027B542 /* background.png */,
+				DA9F1A2219C890BB00988CA4 /* demo.gif */,
 				DA7FDEA519C21C8900D80F4C /* Supporting Files */,
 			);
 			path = "Swift-Gif";
@@ -354,6 +357,7 @@
 				DA17EBB119C5333B0027B542 /* background.png in Resources */,
 				DA17EBAF19C50BBB0027B542 /* picture_filled-256.png in Resources */,
 				DA7FDEB519C21C8900D80F4C /* LaunchScreen.xib in Resources */,
+				DA9F1A2319C890BB00988CA4 /* demo.gif in Resources */,
 				DA7FDEB219C21C8900D80F4C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
