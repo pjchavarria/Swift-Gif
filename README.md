@@ -3,9 +3,7 @@ Swift-Gif
 
 iOS application written in Swift using Alamofire networking library, SwiftyJSON JSON parsing library and Objective-C libraries
 
-
-![](https://dl.dropboxusercontent.com/u/20098522/Github/funny-cat.gif)
-
+<img src="https://dl.dropboxusercontent.com/u/20098522/Github/funny-cat.gif" width="276"/>
 
 ## Libraries Used
 
