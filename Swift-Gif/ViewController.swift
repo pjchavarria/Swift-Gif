@@ -27,6 +27,16 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         // Do any additional setup after loading the view, typically from a nib.
         searchBar.setBackgroundImage(UIImage(), forBarPosition: UIBarPosition.Any, barMetrics: UIBarMetrics.Default)
         
+        // Set different number of columns depending on iPad/iPhone
+        let layout = collectionView.collectionViewLayout as CHTCollectionViewWaterfallLayout;
+        if UIDevice.currentDevice().userInterfaceIdiom == .Pad {
+            // iPad
+            layout.columnCount = 3
+        }else{
+            // iPhone/iPod
+            layout.columnCount = 2
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
