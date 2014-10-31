@@ -4,3 +4,4 @@
 #import "CHTCollectionViewWaterfallLayout.h"
 #import "AnimatedGIFImageSerialization.h"
 #import "UIImageView+AFNetworking.h"
+#import "PureLayout.h"
