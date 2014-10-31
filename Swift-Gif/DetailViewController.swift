@@ -26,7 +26,7 @@ class DetailViewController: UIViewController, ImagePushAnimatorProtocol  {
         // Do any additional setup after loading the view, typically from a nib.
         if let unwrappedGif = gif {
             
-            self.imageView.setImageWithURLRequest(NSURLRequest(URL: NSURL(string: unwrappedGif.originalUrl!)), placeholderImage: self.image, success: { (request, response, image) -> Void in
+            self.imageView.setImageWithURLRequest(NSURLRequest(URL: NSURL(string: unwrappedGif.originalUrl!)!), placeholderImage: self.image, success: { (request, response, image) -> Void in
                 self.imageView.image = image
                 self.backgroundImageView.image = (image.copy() as UIImage)
             }, failure: { (request, response, error) -> Void in

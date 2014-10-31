@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA17EB6F19C487260027B542 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA17EB6E19C487260027B542 /* Alamofire.swift */; };
 		DA17EB7319C49C780027B542 /* CHTCollectionViewWaterfallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DA17EB7219C49C780027B542 /* CHTCollectionViewWaterfallLayout.m */; };
 		DA17EB8A19C4C3C70027B542 /* AnimatedGIFImageSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = DA17EB8919C4C3C70027B542 /* AnimatedGIFImageSerialization.m */; };
 		DA17EBA219C4CA2E0027B542 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = DA17EB9019C4CA2E0027B542 /* AFHTTPClient.m */; };
@@ -23,6 +22,11 @@
 		DA17EBB119C5333B0027B542 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = DA17EBB019C5333B0027B542 /* background.png */; };
 		DA17EBB319C5346D0027B542 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA17EBB219C5346D0027B542 /* DetailViewController.swift */; };
 		DA17EBB519C534D70027B542 /* ImagePushAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA17EBB419C534D70027B542 /* ImagePushAnimator.swift */; };
+		DA3276491A029FE7004D37D0 /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3276411A029FE7004D37D0 /* ALView+PureLayout.m */; };
+		DA32764A1A029FE7004D37D0 /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3276431A029FE7004D37D0 /* NSArray+PureLayout.m */; };
+		DA32764B1A029FE7004D37D0 /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3276451A029FE7004D37D0 /* NSLayoutConstraint+PureLayout.m */; };
+		DA3276501A02A22F004D37D0 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA32764E1A02A22F004D37D0 /* Alamofire.swift */; };
+		DA3276511A02A22F004D37D0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA32764F1A02A22F004D37D0 /* Info.plist */; };
 		DA7FDEA819C21C8900D80F4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7FDEA719C21C8900D80F4C /* AppDelegate.swift */; };
 		DA7FDEAD19C21C8900D80F4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7FDEAC19C21C8900D80F4C /* ViewController.swift */; };
 		DA7FDEB019C21C8900D80F4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA7FDEAE19C21C8900D80F4C /* Main.storyboard */; };
@@ -47,7 +51,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DA17EB6E19C487260027B542 /* Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
 		DA17EB7019C49C770027B542 /* Swift-Gif-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swift-Gif-Bridging-Header.h"; sourceTree = "<group>"; };
 		DA17EB7119C49C780027B542 /* CHTCollectionViewWaterfallLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHTCollectionViewWaterfallLayout.h; sourceTree = "<group>"; };
 		DA17EB7219C49C780027B542 /* CHTCollectionViewWaterfallLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHTCollectionViewWaterfallLayout.m; sourceTree = "<group>"; };
@@ -76,6 +79,18 @@
 		DA17EBB019C5333B0027B542 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		DA17EBB219C5346D0027B542 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		DA17EBB419C534D70027B542 /* ImagePushAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePushAnimator.swift; sourceTree = "<group>"; };
+		DA3276401A029FE7004D37D0 /* ALView+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALView+PureLayout.h"; sourceTree = "<group>"; };
+		DA3276411A029FE7004D37D0 /* ALView+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALView+PureLayout.m"; sourceTree = "<group>"; };
+		DA3276421A029FE7004D37D0 /* NSArray+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+PureLayout.h"; sourceTree = "<group>"; };
+		DA3276431A029FE7004D37D0 /* NSArray+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+PureLayout.m"; sourceTree = "<group>"; };
+		DA3276441A029FE7004D37D0 /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
+		DA3276451A029FE7004D37D0 /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
+		DA3276461A029FE7004D37D0 /* PureLayout+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PureLayout+Internal.h"; sourceTree = "<group>"; };
+		DA3276471A029FE7004D37D0 /* PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureLayout.h; sourceTree = "<group>"; };
+		DA3276481A029FE7004D37D0 /* PureLayoutDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureLayoutDefines.h; sourceTree = "<group>"; };
+		DA32764D1A02A22F004D37D0 /* Alamofire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alamofire.h; sourceTree = "<group>"; };
+		DA32764E1A02A22F004D37D0 /* Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
+		DA32764F1A02A22F004D37D0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA7FDEA219C21C8900D80F4C /* Swift-Gif.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-Gif.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA7FDEA619C21C8900D80F4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA7FDEA719C21C8900D80F4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -153,6 +168,33 @@
 				DA17EB7219C49C780027B542 /* CHTCollectionViewWaterfallLayout.m */,
 			);
 			name = CHTCollectionViewWaterfallLayout;
+			sourceTree = "<group>";
+		};
+		DA32763F1A029FE7004D37D0 /* PureLayout */ = {
+			isa = PBXGroup;
+			children = (
+				DA3276401A029FE7004D37D0 /* ALView+PureLayout.h */,
+				DA3276411A029FE7004D37D0 /* ALView+PureLayout.m */,
+				DA3276421A029FE7004D37D0 /* NSArray+PureLayout.h */,
+				DA3276431A029FE7004D37D0 /* NSArray+PureLayout.m */,
+				DA3276441A029FE7004D37D0 /* NSLayoutConstraint+PureLayout.h */,
+				DA3276451A029FE7004D37D0 /* NSLayoutConstraint+PureLayout.m */,
+				DA3276461A029FE7004D37D0 /* PureLayout+Internal.h */,
+				DA3276471A029FE7004D37D0 /* PureLayout.h */,
+				DA3276481A029FE7004D37D0 /* PureLayoutDefines.h */,
+			);
+			name = PureLayout;
+			path = Source;
+			sourceTree = "<group>";
+		};
+		DA32764C1A02A22F004D37D0 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				DA32764D1A02A22F004D37D0 /* Alamofire.h */,
+				DA32764E1A02A22F004D37D0 /* Alamofire.swift */,
+				DA32764F1A02A22F004D37D0 /* Info.plist */,
+			);
+			path = Alamofire;
 			sourceTree = "<group>";
 		};
 		DA7FDE9919C21C8900D80F4C = {
@@ -264,11 +306,12 @@
 			isa = PBXGroup;
 			children = (
 				DA17EB7019C49C770027B542 /* Swift-Gif-Bridging-Header.h */,
+				DA32764C1A02A22F004D37D0 /* Alamofire */,
+				DA32763F1A029FE7004D37D0 /* PureLayout */,
 				DA17EB8E19C4CA2E0027B542 /* AFNetworking */,
 				DA17EB8719C4C3C70027B542 /* AnimatedGIFImageSerialization */,
 				DA17EBAB19C4CA930027B542 /* CHTCollectionViewWaterfallLayout */,
 				DA7FDEDF19C3873400D80F4C /* SwiftyJSON.swift */,
-				DA17EB6E19C487260027B542 /* Alamofire.swift */,
 			);
 			name = Vendor;
 			sourceTree = "<group>";
@@ -359,6 +402,7 @@
 				DA7FDEB519C21C8900D80F4C /* LaunchScreen.xib in Resources */,
 				DA9F1A2319C890BB00988CA4 /* demo.gif in Resources */,
 				DA7FDEB219C21C8900D80F4C /* Images.xcassets in Resources */,
+				DA3276511A02A22F004D37D0 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,17 +426,20 @@
 				DA17EB8A19C4C3C70027B542 /* AnimatedGIFImageSerialization.m in Sources */,
 				DA17EBA819C4CA2E0027B542 /* AFURLConnectionOperation.m in Sources */,
 				DA17EBA219C4CA2E0027B542 /* AFHTTPClient.m in Sources */,
+				DA32764A1A029FE7004D37D0 /* NSArray+PureLayout.m in Sources */,
 				DA7FDED919C2276800D80F4C /* GifViewCell.swift in Sources */,
 				DA17EBA419C4CA2E0027B542 /* AFImageRequestOperation.m in Sources */,
 				DA17EBA619C4CA2E0027B542 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				DA17EBA319C4CA2E0027B542 /* AFHTTPRequestOperation.m in Sources */,
+				DA3276491A029FE7004D37D0 /* ALView+PureLayout.m in Sources */,
 				DA7FDECE19C21E1500D80F4C /* GiphyAPIClient.swift in Sources */,
 				DA17EBB319C5346D0027B542 /* DetailViewController.swift in Sources */,
 				DA7FDEE019C3873400D80F4C /* SwiftyJSON.swift in Sources */,
 				DA7FDEAD19C21C8900D80F4C /* ViewController.swift in Sources */,
 				DA7FDED419C221D500D80F4C /* Gif.swift in Sources */,
 				DA17EBA919C4CA2E0027B542 /* AFXMLRequestOperation.m in Sources */,
-				DA17EB6F19C487260027B542 /* Alamofire.swift in Sources */,
+				DA3276501A02A22F004D37D0 /* Alamofire.swift in Sources */,
+				DA32764B1A029FE7004D37D0 /* NSLayoutConstraint+PureLayout.m in Sources */,
 				DA17EBA519C4CA2E0027B542 /* AFJSONRequestOperation.m in Sources */,
 				DA17EBAA19C4CA2E0027B542 /* UIImageView+AFNetworking.m in Sources */,
 				DA7FDEA819C21C8900D80F4C /* AppDelegate.swift in Sources */,
@@ -524,6 +571,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Swift-Gif/Swift-Gif-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -536,6 +584,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Swift-Gif/Swift-Gif-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
