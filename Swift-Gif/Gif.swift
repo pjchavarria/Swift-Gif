@@ -22,8 +22,8 @@ class Gif {
 
 extension Gif {
     class func translateFromJSON(data: AnyObject?) -> [Gif] {
-        if let unwrappedData = data as? NSDictionary {
-            let json = JSONValue(unwrappedData)
+        if let data = data as? NSDictionary {
+            let json = JSONValue(data)
             if let jsonGifs = json["data"].array {
                 
                 //JSONValue it self confirm to Protocol "LogicValue", with JSONValue.JInvalid produce false and others produce true

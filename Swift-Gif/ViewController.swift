@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, CHTCollectionViewDelegateWaterfallLayout, UISearchBarDelegate,ImagePushAnimatorProtocol, UIViewControllerTransitioningDelegate  {
+class ViewController: UIViewController {
 
     let gifViewCellIdentifier = "GifCell"
     var images = [Gif]()
@@ -44,62 +44,6 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         // Dispose of any resources that can be recreated.
     }
     
-    // MARK: - UICollectionViewDataSource
-    func collectionView(collectionView: UICollectionView,
-        numberOfItemsInSection section: Int) -> Int
-    {
-        return self.images.count
-    }
-
-    func collectionView(collectionView: UICollectionView,
-        cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell
-    {
-        let gifViewCell = collectionView.dequeueReusableCellWithReuseIdentifier(gifViewCellIdentifier, forIndexPath: indexPath) as GifViewCell
-        let gifObject = images[Int(indexPath.row)]
-        gifViewCell.maskForGif(gifObject);
-        
-        if indexPath.row == self.fetchedImages - 5 {
-            self.fetchedImages = self.images.count + 25
-            // Fetch new images
-                GiphyAPIClient.sharedInstance.gifsForQuery(queryString,offset: self.images.count, callback: { (imageArray, error) -> () in
-                    // Update collection view with new data
-                    self.collectionView.performBatchUpdates({ () -> Void in
-                        let dataCount = self.images.count
-                        self.images += imageArray
-                        
-                        var indexPaths = [NSIndexPath]()
-                        for var i=dataCount; i<dataCount+imageArray.count; i++ {
-                            indexPaths.append(NSIndexPath(forRow: i, inSection: 0))
-                        }
-                        
-                        self.collectionView.insertItemsAtIndexPaths(indexPaths)
-                        
-                    }, completion: nil)
-            })
-        }
-        return gifViewCell;
-    }
-    
-    // MARK: UICollectionViewDelegate
-    
-    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        // Select
-        let cell = collectionView.cellForItemAtIndexPath(indexPath) as GifViewCell
-        
-        self.selectedImageView = cell.imageView
-        self.selectedGif = images[Int(indexPath.row)]
-        
-        self.performSegueWithIdentifier("showDetail", sender: nil)
-    }
-    
-    // MARK: - UICollectionViewLayout
-    
-    func collectionView(collectionView: UICollectionView!, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize
-    {
-        let gifObject = images[Int(indexPath.row)]
-        return CGSizeMake(145,(145/CGFloat(gifObject.width))*CGFloat(gifObject.height));
-    }
-    
     // MARK: - Segue
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showDetail" {
@@ -111,8 +55,73 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         }
     }
     
+}
+
+// MARK: - UICollectionViewDataSource
+extension ViewController : UICollectionViewDataSource {
     
-    // MARK: - UISearchBarDelegate
+    func collectionView(collectionView: UICollectionView,
+        numberOfItemsInSection section: Int) -> Int
+    {
+        return self.images.count
+    }
+    
+    func collectionView(collectionView: UICollectionView,
+        cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell
+    {
+        let gifViewCell = collectionView.dequeueReusableCellWithReuseIdentifier(gifViewCellIdentifier, forIndexPath: indexPath) as GifViewCell
+        let gifObject = images[Int(indexPath.row)]
+        gifViewCell.maskForGif(gifObject);
+        
+        if indexPath.row == self.fetchedImages - 5 {
+            self.fetchedImages = self.images.count + 25
+            // Fetch new images
+            GiphyAPIClient.sharedInstance.gifsForQuery(queryString,offset: self.images.count, callback: { (imageArray, error) -> () in
+                // Update collection view with new data
+                self.collectionView.performBatchUpdates({ () -> Void in
+                    let dataCount = self.images.count
+                    self.images += imageArray
+                    
+                    var indexPaths = [NSIndexPath]()
+                    for var i=dataCount; i<dataCount+imageArray.count; i++ {
+                        indexPaths.append(NSIndexPath(forRow: i, inSection: 0))
+                    }
+                    
+                    self.collectionView.insertItemsAtIndexPaths(indexPaths)
+                    
+                    }, completion: nil)
+            })
+        }
+        return gifViewCell;
+    }
+    
+}
+
+// MARK: - UICollectionViewDelegate
+extension ViewController : UICollectionViewDelegate {
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        // Select
+        let cell = collectionView.cellForItemAtIndexPath(indexPath) as GifViewCell
+        
+        self.selectedImageView = cell.imageView
+        self.selectedGif = images[Int(indexPath.row)]
+        
+        self.performSegueWithIdentifier("showDetail", sender: nil)
+    }
+}
+
+
+// MARK: - CHTCollectionViewDelegateWaterfallLayout
+extension ViewController : CHTCollectionViewDelegateWaterfallLayout {
+    func collectionView(collectionView: UICollectionView!, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize
+    {
+        let gifObject = images[Int(indexPath.row)]
+        return CGSizeMake(145,(145/CGFloat(gifObject.width))*CGFloat(gifObject.height));
+    }
+}
+
+// MARK: - UISearchBarDelegate
+extension ViewController : UISearchBarDelegate {
     
     func searchBarSearchButtonClicked(searchBar: UISearchBar) {
         
@@ -128,9 +137,9 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             initialSpringVelocity: 1.0,
             options: .CurveEaseIn,
             animations: { () -> Void in
-            self.infoView.transform = CGAffineTransformScale(CGAffineTransformIdentity,0.01, 0.01)
-        }) { (finished) -> Void in
-            self.infoView.transform = CGAffineTransformScale(CGAffineTransformIdentity,0.0, 0.0)
+                self.infoView.transform = CGAffineTransformScale(CGAffineTransformIdentity,0.01, 0.01)
+            }) { (finished) -> Void in
+                self.infoView.transform = CGAffineTransformScale(CGAffineTransformIdentity,0.0, 0.0)
         }
         
         GiphyAPIClient.sharedInstance.gifsForQuery(queryString,offset: 0, callback: { (imageArray, error) -> () in
@@ -171,9 +180,11 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             }
         }
     }
-    
-    
-    // MARK: - ImagePushAnimatorProtocol
+}
+
+
+// MARK: - ImagePushAnimatorProtocol
+extension ViewController : ImagePushAnimatorProtocol {
     
     func transitioningImageView() -> UIImageView {
         return self.selectedImageView!
@@ -182,8 +193,11 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     func transitioningGif() -> Gif {
         return self.selectedGif!
     }
-    
-    // MARK: - UIViewControllerTransitioningDelegate
+}
+
+
+// MARK: - UIViewControllerTransitioningDelegate
+extension ViewController : UIViewControllerTransitioningDelegate {
     func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         let animator = ImagePushAnimator()
         animator.isPresenting = true

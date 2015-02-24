@@ -59,7 +59,7 @@ class ImagePushAnimator : NSObject, UIViewControllerAnimatedTransitioning{
             leftConstraint.autoRemove()
             topConstraint.autoRemove()
 
-            imageTo.autoPinEdgeToSuperviewEdge(.Top, withInset: 30);
+            imageTo.autoPinEdgeToSuperviewEdge(.Top, withInset: 55);
             imageTo.autoSetDimension(.Height, toSize: 300);
             imageTo.autoPinEdgeToSuperviewEdge(.Left);
             imageTo.autoPinEdgeToSuperviewEdge(.Right);

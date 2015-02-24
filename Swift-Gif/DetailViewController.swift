@@ -24,9 +24,9 @@ class DetailViewController: UIViewController, ImagePushAnimatorProtocol  {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        if let unwrappedGif = gif {
+        if let gif = gif {
             
-            self.imageView.setImageWithURLRequest(NSURLRequest(URL: NSURL(string: unwrappedGif.originalUrl!)!), placeholderImage: self.image, success: { (request, response, image) -> Void in
+            self.imageView.setImageWithURLRequest(NSURLRequest(URL: NSURL(string: gif.originalUrl!)!), placeholderImage: self.image, success: { (request, response, image) -> Void in
                 self.imageView.image = image
                 self.backgroundImageView.image = (image.copy() as UIImage)
             }, failure: { (request, response, error) -> Void in
@@ -34,10 +34,10 @@ class DetailViewController: UIViewController, ImagePushAnimatorProtocol  {
             })
             self.backgroundImageView.image = (self.image?.copy() as UIImage)
             
-            sourceLabel.text = gif?.source
-            widthLabel.text = gif?.width.description
-            heightLabel.text = gif?.height.description
-            ratingLabel.text = gif?.rating
+            sourceLabel.text = gif.source
+            widthLabel.text = gif.width.description
+            heightLabel.text = gif.height.description
+            ratingLabel.text = gif.rating
         }
 
     }
