@@ -3,7 +3,7 @@ Swift-Gif
 
 iOS application written in Swift using Alamofire networking library, SwiftyJSON JSON parsing library and Objective-C libraries
 
-###Update:
+### Update:
 - Using autolayout with animations.
 - Supports portrait and landscape.
 - Supports iPhone and iPad.
